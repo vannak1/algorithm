@@ -10,3 +10,13 @@ function getCombinations(chars) {
   f('', chars);
   return result;
 }
+
+def get_combination(array)
+  result = []
+
+
+end
+
+def sequencer(array)
+  array.each do |el|
+    result.push(prefix + el)
