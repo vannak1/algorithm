@@ -17,3 +17,7 @@
 # * /x/../ means "move into directory x and then return back to the parent directory", so it can replaced with a single /;
 # * // means "move to the current directory" and can be replaced with a single /.
 #
+def simplifyPath(path)
+  #iterate through path
+  #replace char
+end
