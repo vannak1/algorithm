@@ -15,8 +15,8 @@ def combo(arr_of_inputs, num_of_inputs)
     temp = []
 
     #iterate through all 0 and 2 length
-    array_of_inputs.each {|el| temp.push(el)}
-    result.push(temp)
+    arr_of_inputs.each {|el| temp.push(el)}
+    result << temp
     #on 3rd iteration check if difference is constant then push
   end
 
