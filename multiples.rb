@@ -15,6 +15,8 @@ def multiples(x, n)
   y = 1
 
   # Solves 2^e = n. Not using ln because no division allowed.
+  # If division is allowed, this can be done by using x = ln(n) / ln(base)
+  # with base being 2 in this case.
   while n != y
     y = 2 ** e
     e += 1
