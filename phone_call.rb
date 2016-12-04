@@ -11,28 +11,19 @@
 
 def call_duration(min1, min2_10, min11, s)
   duration = 0
-  money_left = s
-  cost = [min1]
-  9.times { cost.push(min2_10)}
-  cost.push(min11)
 
-  i = 0
+  #minute1
+  duration = 1 if s - min1 <= 0
 
-  while money_left > 0
-    i = 9 if i >= 9
-
-    if (money_left - cost[i]) > 0
-      duration += 1
-      money_left -= cost[i]
-      i += 1
-    else
-      money_left = 0
-      i+= 1
-    end
-    puts "Step #{i+1}: money_left is #{money_left} duration: #{duration} cost: #{cost[i]}"
+  #between 2-10
+  if s - min1 - min2_10 * 9 <= 0
+    duration = 1 + ( ( s-min1 ) / min2_10 )
   end
 
-  puts duration
+  #greater than 11 min
+  duration = 10 + (s / (s - (min1 + min2_10 * 9))
+
+
 end
 
 call_duration(3, 1, 2, 20)
