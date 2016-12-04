@@ -19,15 +19,19 @@ def call_duration(min1, min2_10, min11, s)
   i = 0
 
   while money_left > 0
-    if money_left - cost[i] > 0
+    puts cost[i]
+    if (money_left - cost[i]) > 0
       duration += 1
       money_left -= cost[i]
       i += 1
     else
+      money_left = 0
       i+= 1
     end
     i += 1
   end
 
-  duration
+  puts duration
 end
+
+call_duration(3, 1, 2, 20)
