@@ -19,6 +19,8 @@ def call_duration(min1, min2_10, min11, s)
   i = 0
 
   while money_left > 0
+    i = 9 if i >= 9
+
     if (money_left - cost[i]) > 0
       duration += 1
       money_left -= cost[i]
