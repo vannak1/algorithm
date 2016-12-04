@@ -13,7 +13,7 @@ def call_duration(min1, min2_10, min11, s)
   duration = 0
   money_left = s
   cost = [min1]
-  9.times{ cost.push(min2_10)}
+  9.times { cost.push(min2_10)}
   cost.push(min11)
 
   i = 0
@@ -24,7 +24,10 @@ def call_duration(min1, min2_10, min11, s)
       money_left -= cost[i]
       i += 1
     else
-      duration
+      i+= 1
     end
+    i += 1
   end
+
+  duration
 end
