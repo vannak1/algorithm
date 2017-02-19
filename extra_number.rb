@@ -8,5 +8,5 @@
 #
 # The two equal numbers are a and c. The third number (b) equals 7, which is the answer.
 def extraNumber(a, b, c)
-
+ 
 end
